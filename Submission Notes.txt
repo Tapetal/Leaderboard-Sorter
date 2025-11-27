@@ -1,0 +1,31 @@
+LEADERBOARD SORTING SUBMISSION
+================================
+
+Setup Instructions:
+1. npm install
+2. Place leaderboard.xlsx in input/ folder
+3. npm run dev (or npm run build && npm start)
+4. Check output/ folder for results
+
+Key Features Implemented:
+✓ Total points ranking
+✓ Spending tiebreaker (lower spending ranks higher)
+✓ Countback system (highest score, occurrence count, 2nd highest, etc.)
+✓ Alphabetical sorting with red highlighting (if all tiebreakers fail)
+✓ Clean Excel output with formatting
+✓ Detailed leaderboard with all event scores
+
+Technology Stack:
+- Node.js + TypeScript
+- xlsx (reading)
+- exceljs (writing with formatting)
+
+Current Results:
+- 25 players successfully ranked
+- 0 unresolved ties (all tiebreakers worked)
+- Winner: Team Overbudget (1080 points)
+
+Additional Tiebreaker Suggestion:
+If all tiebreakers fail, I suggest using "Most Recent Performance" 
+(average of last 5 events) as it rewards current form and momentum,
+which is valuable in competitive rankings.
